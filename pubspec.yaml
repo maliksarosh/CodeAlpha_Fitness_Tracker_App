@@ -1,0 +1,57 @@
+name: fitness_tracker_app
+description: "A new Flutter project."
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.3.3 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # Core UI & Functionality Plugins
+  cupertino_icons: ^1.0.8
+  iconsax: ^0.0.8
+  provider: ^6.1.2
+  intl: ^0.18.1
+
+  # Database & Storage Plugins
+  sqflite: ^2.3.3
+  path: ^1.9.0
+  shared_preferences: ^2.2.3
+
+  # Visualization Plugins
+  percent_indicator: ^4.2.3
+  fl_chart: ^0.68.0
+  simple_animations: ^5.0.2
+
+  # Firebase Plugins
+  firebase_core: ^2.32.0
+  firebase_auth: ^4.20.0
+  cloud_firestore: ^4.17.4
+
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  flutter_lints: ^3.0.0
+
+  # The package dependency goes here
+  flutter_launcher_icons: ^0.13.1
+
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/images/logo.png
+
+# --- THIS IS THE CORRECT CONFIGURATION ---
+# It is a top-level key, not nested under dev_dependencies
+flutter_launcher_icons:
+  android: "launcher_icon"
+  ios: true
+  image_path: "assets/images/logo.png"
+  min_sdk_android: 24 # Your app's minimum SDK version is 24
